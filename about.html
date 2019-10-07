@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CineTime - About</title>
+	<link rel="stylesheet" href="style.css">
+<!-- Nyomtatási stíluslap -->
+<style>
+	@media print{
+		img {
+			display: none;
+		}
+	}
+	@page :left{
+		margin: 0.5cm;
+		@bottom-left {
+			content: "Page" counter(page) " / "counter(pages);
+		}
+	}
+</style>
+
+</head>
+
+<body>
+
+	<nav>
+			<ul id="nav">
+			   <li><a href="index.html"><img class="logo" src="pics/logo.png" alt="CineTime Logo"></li></a>
+			   <li><a href="toppicks.html">TOP PICKS</a></li>
+			   <li><a href="forum.html">FORUM</a></li>
+			   <li><a href="newsletter.html">NEWSLETTER</a></li>
+				 <li class="selected"><a href="about.html">ABOUT</a></li>
+ 			</ul>
+	</nav>
+
+	<div class="grp">
+	<h1>Information</h1>
+
+	<h2>"Take some time to read about us, or to tell us about yourself!"</h2>
+</div>
+
+<main class="content" id="about">
+
+		<h3>Who are we?</h3>
+	<article class="about-us">
+		<p>
+			We are a made up organization for a group assignment for a WebDesign class. In case there's any correlation to any existing companies, or organizations we sincerely apologize for ruining your brand image. We were founded in 2018 and will continue to provide services until we successfully pass this subject.
+		</p>
+
+		<p>
+			No animals or children were harmed during the process of making this website.
+		</p>
+	</article>
+
+	<section style="text-align: left; margin: 25px; color: lightGray;">
+
+		<h3>Contact Us</h3>
+		<h4>
+			Tel: +1 573-796-3555
+			<br/>
+			Fax: +1 323 555 1234
+			<br/>
+			Email: cinetime@support.com
+			<br/>
+		</h4>
+
+	</section>
+
+	<div style="color: white">
+		<input type="submit" value="Click for Current Time"
+			onclick="document.getElementById('demo').innerHTML = Date()">
+			<p  id="demo"></p>
+
+	</div>
+	</main>
+
+	</body>
+
+	<footer>
+		Created for examination prurposes only. Do not redistribute.
+	</footer>
+
+</html>

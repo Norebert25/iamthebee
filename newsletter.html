@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CineTime - Newsletter</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<nav>
+			<ul id="nav">
+			   <li><a href="index.html"><img class="logo" src="pics/logo.png" alt="CineTime Logo"></li></a>
+			   <li><a href="toppicks.html">TOP PICKS</a></li>
+			   <li><a href="forum.html">FORUM</a></li>
+			   <li class="selected"><a href="newsletter.html">NEWSLETTER</a></li>
+				 <li><a href="about.html">ABOUT</a></li>
+ 			</ul>
+	</nav>
+
+<div class="grp">
+	<h1>NEWSLETTER</h1>
+
+	<h2>"SIGN UP TO OUR NEWSLETTER FOR THE LATEST UPDATES ON YOUR FAVOURITE SHOWS AND MOVIES!"</h2>
+</div>
+
+<main class = "content" id="newsletter">
+
+<form action="valami.php" method="post" enctype="multipart/form-data">
+<fieldset>
+	<legend>PERSONAL INFORMATION</legend>
+
+	<div class="personal-info">
+	<label for="title">TITLE</label><br/>
+	<select id="title" autofocus tabindex="0">
+	<option selected disabled>Please select</option>
+	<option value="mr">Mr.</option>
+	<option value="ms">Ms.</option>
+	<option value="mrs">Mrs.</option>
+	<option value="dr">Dr.</option>
+	<option value="prof">Prof.</option>
+	</select> <br/>
+
+	<label>FIRST NAME<br/><input type="text" name="first-name" value="" placeholder="FIRST NAME" maxlength="10" autofocus tabindex="1" /></label><br/>
+	<label>LAST NAME<br/><input type="text" name="last-name" value="" placeholder="LAST NAME" maxlength="10" autofocus tabindex="2" /></label><br/>
+	<label>DATE OF BIRTH<br/><input type="date" name="birth-date" value="" min="1900-01-01" max="2001-01-01" tabindex="3"/></label> <br/>
+	<label>EMAIL ADDRESS<br/><input type="email" name="email" value="" placeholder="EMAIL ADDRESS" maxlength="20" autofocus tabindex="4" /></label><br/>
+	<label>PHONE NUMBER<br/><input type="number" name="phone" value="" placeholder="+36000000000" maxlength="12" autofocus tabindex="5" /></label><br/>
+	</div>
+</fieldset>
+
+<fieldset class="pref">
+	<legend>TELL US WHAT YOU LIKE</legend>
+
+	<h3>I WANT TO RECIEVE NEWSLETTERS</h3>
+
+	<label for="newsletter-radio-day">DAILY</label><br/>
+	<input type="radio" id="newsletter-radio-day" name="news-freq" value="1" checked/><br/>
+
+	<label for="newsletter-radio-week">WEEKLY</label><br/>
+	<input type="radio" id="newsletter-radio-week" name="news-freq" value="2" /><br/>
+
+	<label for="newsletter-radio-2week">BI-WEEKLY</label><br/>
+	<input type="radio" id="newsletter-radio-2week" name="news-freq" value="3" /><br/>
+
+	<label for="newsletter-radio-month">MONTHLY</label><br/>
+	<input type="radio" id="newsletter-radio-month" name="news-freq" value="3" /><br/><br/>
+
+	<h3>THE GENRES I LIKE ARE</h3>
+
+	<div class="genres">
+		<label for="newsletter-check-horror">HORROR </label>
+		<input type="checkbox" id="newsletter-check-horror" name="genre" value="horror" /> <br/>
+
+		<label for="newsletter-check-crime">CRIME</label>
+		<input type="checkbox" id="newsletter-check-crime" name="genre" value="crime" /> <br/>
+
+		<label for="newsletter-check-comedy">COMEDY</label>
+		<input type="checkbox" id="newsletter-check-comedy" name="genre" value="comedy" /> <br/>
+
+		<label for="newsletter-check-romance">ROMANCE</label>
+		<input type="checkbox" id="newsletter-check-romance" name="genre" value="romance" /> <br/>
+	</div>
+</fieldset>
+
+<fieldset class="tick">
+	<label for="priv">I HAVE READ, AND AGREED TO <i>THE CINETIME NEWSLETTER<sup>®</sup></i>'S <a href="https://privacypolicytemplate.net/live.php?token=jofjvXMeVzEZuMLIow8W2qJjN9Kffany" target="_blank"> PRIVACY POLICY</a> AND THE <a href="https://termsservicetemplate.com/live.php?token=Ss5SSEm1buiZcSAEbkdhhLPBsYLU0uqC" target="_blank">TERMS OF SERVICE</a></label><br/>
+	<input type="checkbox"  id="priv" name="privacy"/><br/>
+
+	<label for="mark">I CONSENT TO HAVE MY DETAILS USED FOR MARKETING PURPOSES BY CINETIME, AND I WANT TO RECIEVE OCCASIONAL PROMOTIONAL EMAILS</label><br/>
+	<input type="checkbox"  id="mark" name="marketing"/><br/>
+</fieldset>
+
+<input type="submit" value="SIGN UP" />
+
+</form>
+</main>
+
+	<footer>
+		Created for examination prurposes only. Do not redistribute.
+	</footer>
+
+
+</body>
+</html>
