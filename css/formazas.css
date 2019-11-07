@@ -1,0 +1,48 @@
+.topnav {
+    overflow: hidden;
+    background-color: grey ;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 0px;
+    font-size: 17px;
+  }
+
+
+.navbar{
+    overflow: hidden;
+    background-color: black;
+ }
+
+ .navbar a {
+     float: left;
+    font-size: 14px;
+    color: goldenrod;
+    text-align: center;
+    padding: 14px 0px;
+    text-decoration: none;
+    width:197px;
+    height:14px;
+ }
+
+ .navbar a.active{
+     background-color: goldenrod;
+     color:black;
+ }
+
+ .lablec {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 20px;
+    width: 100%;
+    background-color: black ;
+    color:goldenrod;
+    font-family: "Lucida Console";
+    text-align: center;
+    font-size: 12px;
+}
+
+.torzs{
+    background:gold;
+}
