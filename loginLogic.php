@@ -1,0 +1,20 @@
+<?php
+    $username = $_POST["nev"];
+    $password = $_POST["jelszo"];
+
+    include "dbconnection.php";
+    $connection = DBconnection::getInstance(DBconnection::$database_name);
+    $oszloplista=array("Username", "Jelszo");
+    $distinct=array(0,0);
+    $tablalista=array("felhasznalo");
+    $feltetelek="felhasznalo.Username = \"{$username}\" AND felhasznalo.Jelszo = \"{$password}\"";
+    $result = $connection->select($oszloplista, $distinct, $tablalista, $feltetelek);
+
+
+    if(mysqli_num_rows($result)==0){
+        echo "Sikertelen belépés";
+    }else if(mysqli_num_rows($result)==1){
+        echo "Sikeres belépés";
+    }else{
+        echo "Error";
+    }
